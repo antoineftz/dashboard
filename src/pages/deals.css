@@ -1,0 +1,15 @@
+/*One panel for the table*/
+
+.containerdeal {
+    display: flex;
+    /*background-color: blue;*/
+    height: 400px;
+}
+
+.containerdeal div {
+    background-color: white;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    flex: 1; /*use it instead of width*/
+}

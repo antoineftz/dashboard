@@ -1,0 +1,71 @@
+/* Create two panels one for a table, other for horizontal bar chart */
+
+.containerag {
+    display: flex;
+    /*background-color:blue;*/
+}
+
+ .containerag div {
+    border: 1px solid rgb(205,218,227);
+    background-color: white;
+    height: 200px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    flex: 1; /*use it instead of width*/
+ }
+
+/*Style for the table*/
+
+/*Flexbox prevents natural overflow scrolling*/
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* horizontal scroll */
+    overflow-y: auto; /* vertical scroll */
+}
+
+table {
+    border-collapse: collapse; /*single shared border*/
+    border-spacing: 0;
+    border: 1px solid rgb(205 218 227);
+    width: 100%;
+    /*background: #f7f9fc;*/
+}
+
+table thead th {
+    text-align: left;
+}
+
+td:first-child {
+
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+table th, table td {
+    padding: 8px 12px;
+}
+
+/*Custom backgound for the first column*/
+tbody tr:nth-child(odd) td:first-child {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) td:first-child {
+    background-color: rgb(251,251,251);
+}
+
+/*Make sure the chart has the right output, takes the place needed*/
+.chart-wrapper {
+    min-height: 350px;
+    overflow: visible;
+}
+
+
+
+
+
+
