@@ -4,6 +4,7 @@ import { useState} from "react";
 import Deallossre from "../components/Dealloss";
 import Linechwon from "../components/Wondeal";
 import Linechdeal from "../components/Dealsproje";
+import Saleagent from "../components/Salechart";
 
 export default function Overview() {
      const [data, setData] = useState<any[]>([]);
@@ -34,7 +35,11 @@ export default function Overview() {
         <Salespip/>
           
         </div>
-       <div className="three">Report date</div>
+       <div className="three">
+       
+          <Saleagent/>
+       
+       </div>
        <div className="four">
          
          <Linechwon/>
