@@ -51,6 +51,8 @@ body {
     grid-row: 1;
 }
 
+/* Force onto line 3, col 1 (leaves end of line 2 empty) */
+
 .six {
     grid-column: 1;
     grid-row: 3;

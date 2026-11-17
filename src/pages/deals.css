@@ -13,3 +13,28 @@
     border-radius: 5px;
     flex: 1; /*use it instead of width*/
 }
+
+/*Style for the table*/
+
+/*Flexbox prevents natural overflow scrolling*/
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* horizontal scroll */
+    overflow-y: auto; /* vertical scroll */
+}
+
+
+
+table {
+    border-collapse: collapse; /*single shared border*/
+    border-spacing: 0;
+    border: 1px solid rgb(205 218 227);
+    width: 100%;
+    /*background: #f7f9fc;*/
+}
+
+
+table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+}
